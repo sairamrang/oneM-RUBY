@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>Enter a zip code for your location.</h1>
+			</div>
+			<form action="/weather" method="POST" class="form-inline">
+				<div class="form-group">
+					<input type="text" name="zip" class="form-control">
+				</div>
+				<input type="submit" class="btn btn-outline-success">
+				<a href="/" class="btn btn-outline-primary">Go to home page</a>				
+				<div class="alert alert-success">
+					<%= @weather %>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

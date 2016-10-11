@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>Enter a stock symbol to get the current price.</h1>
+			</div>			
+			
+			<form action="/stock" method="POST" class="form-inline">
+				<div class="form-group">
+					<input type="text" name="symbol" class="form-control">
+				</div>
+				<input type="submit" class="btn btn-outline-success">
+				<a href="/" class="btn btn-outline-primary">Go to home page</a>
+				<div class="panel-body">
+					<%= @greeting %>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
