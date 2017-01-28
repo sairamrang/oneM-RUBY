@@ -7,7 +7,7 @@ require 'geocoder'
 
 require "Mechanize"
 require "rubygems"
-
+require "Nokogiri"
 
 
 get '/' do
@@ -137,5 +137,7 @@ def getAmazonResults(searchText)
 	else
 		return "Enter a valid search term. "	
 	end
+
+	raise error
 end
 
